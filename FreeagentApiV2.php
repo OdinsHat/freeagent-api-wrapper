@@ -12,7 +12,7 @@ namespace FreeagentApi;
  * @license MIT
  */
 
-class FreeagentApiV2
+class FreeAgentApiV2
 {
     public function __construct()
     {
