@@ -1,4 +1,6 @@
 <?php
+namespace FreeagentApi;
+
 /**
  * An API wrapper for the FreeAgent v2 REST API
  * that uses OAuth for authentication of
