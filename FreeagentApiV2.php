@@ -78,4 +78,29 @@ class FreeAgentApiV2
     {
 
     }
+
+    public function writeToken()
+    {
+
+    }
+
+    public function get($type, $id)
+    {
+
+    }
+
+    public function post($type, $id, $data)
+    {
+
+    }
+
+    public function put($type, $id, $data)
+    {
+
+    }
+
+    public function delete($type, $id)
+    {
+
+    }
 }
