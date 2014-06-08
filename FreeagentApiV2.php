@@ -49,13 +49,13 @@ class FreeAgentApiV2
      * FreeAgent's OAuth Authorization Endpoint
      * @var string
      */
-    private $oauth_auth_endpoint = 'https://api.sandbox.freeagent.com/v2/approve_app';
+    private $oauth_auth_endpoint = 'https://api.freeagent.com/v2/approve_app';
 
     /**
      * FreeAgent OAuth Token Endpoint
      * @var string
      */
-    private $oauth_token_endpoint = 'https://api.sandbox.freeagent.com/v2/token_endpoint';
+    private $oauth_token_endpoint = 'https://api.freeagent.com/v2/token_endpoint';
 
     /**
      * Base API URL endpoint
