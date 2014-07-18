@@ -1,5 +1,10 @@
 <?php
-namespace FreeagentApi;
+namespace OdinsHat\FreeAgentApiV2;
+
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Contacts;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Estimates;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Expenses;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Invoices;
 
 /**
  * An API wrapper for the FreeAgent v2 REST API
@@ -63,9 +68,20 @@ class FreeAgentApiV2
      */
     private $base_api_url = 'https://api.freeagent.com/v2/';
 
+    /**
+     *
+     * @var string
+     */
+    private $token_json_path = '/var/[TOKENPATH]/';
+
 
     public function __construct()
     {
+        /*
+        Replacing what use to be a separate library requirement with
+        my own baked in OAuth client
+         */
+        $this->client = null;
 
     }
 
@@ -76,7 +92,12 @@ class FreeAgentApiV2
 
     public function loadToken()
     {
-
+        $freeagent_string = file_get_contents('freeagent.json');
+        $freeagent_data = json_decode($freeagent_string);
+        $this->token = $freeagent_data->token;
+        $this->refresh = $freeagent_data->refresh_token;
+        $this->client->setAccessToken($this->token);
+        $this->client->setAccessTokenType(OAuth2\Client::ACCESS_TOKEN_BEARER);
     }
 
     public function writeToken()
