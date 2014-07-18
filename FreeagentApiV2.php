@@ -92,7 +92,12 @@ class FreeAgentApiV2
 
     public function loadToken()
     {
-
+        $freeagent_string = file_get_contents('freeagent.json');
+        $freeagent_data = json_decode($freeagent_string);
+        $this->token = $freeagent_data->token;
+        $this->refresh = $freeagent_data->refresh_token;
+        $this->client->setAccessToken($this->token);
+        $this->client->setAccessTokenType(OAuth2\Client::ACCESS_TOKEN_BEARER);
     }
 
     public function writeToken()
