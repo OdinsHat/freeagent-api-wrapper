@@ -68,9 +68,20 @@ class FreeAgentApiV2
      */
     private $base_api_url = 'https://api.freeagent.com/v2/';
 
+    /**
+     *
+     * @var string
+     */
+    private $token_json_path = '/var/[TOKENPATH]/';
+
 
     public function __construct()
     {
+        /*
+        Replacing what use to be a separate library requirement with
+        my own baked in OAuth client
+         */
+        $this->client = null;
 
     }
 
