@@ -1,5 +1,5 @@
 <?php
-namespace FreeagentApi;
+namespace OdinsHat\FreeAgentApiV2;
 
 /**
  * An API wrapper for the FreeAgent v2 REST API
