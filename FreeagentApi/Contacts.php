@@ -1,6 +1,6 @@
 <?php
 
-namespace OdinsHat\FreeAgentApiV2\FreeagentApi\Contacts;
+namespace OdinsHat\FreeAgentApiV2\FreeagentApi;
 
 class Contacts extends FreeAgentApiV2
 {

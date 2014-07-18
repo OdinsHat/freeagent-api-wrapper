@@ -1,6 +1,11 @@
 <?php
 namespace OdinsHat\FreeAgentApiV2;
 
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Contacts;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Estimates;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Expenses;
+use OdinsHat\FreeAgentApiV2\FreeagentApi\Invoices;
+
 /**
  * An API wrapper for the FreeAgent v2 REST API
  * that uses OAuth for authentication of
