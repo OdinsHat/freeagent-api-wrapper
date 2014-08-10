@@ -25,12 +25,7 @@ class Contacts extends FreeAgentApiV2
 
     }
 
-    public function active()
-    {
-
-    }
-
-    public function get_contact()
+    public function getContact()
     {
 
     }
@@ -50,5 +45,3 @@ class Contacts extends FreeAgentApiV2
 
     }
 }
-
-?>
