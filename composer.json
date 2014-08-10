@@ -1,0 +1,17 @@
+{
+    "name": "odinshat/php-freeagent-api-wrapper",
+    "description": "A wrapper for the FreeAgent API (v2) written in PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Doug Bromley",
+            "email": "doug@tintophat.com"
+        }
+    ],
+    "require": {
+        "adoy/oauth2": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.4.*@dev"
+    }
+}
