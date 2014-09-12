@@ -2,6 +2,8 @@
     "name": "odinshat/php-freeagent-api-wrapper",
     "description": "A wrapper for the FreeAgent API (v2) written in PHP",
     "license": "MIT",
+    "homepage": "https://github.com/OdinsHat/freeagent-api-wrapper",
+    "keywords": ["freeagent", "finance", "api wrapper", "api", "rest", "oauth2"],
     "authors": [
         {
             "name": "Doug Bromley",
@@ -9,9 +11,10 @@
         }
     ],
     "require": {
+        "php": ">=5.4.0",
         "adoy/oauth2": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.4.*@dev"
+        "phpunit/phpunit": "4.2.0"
     }
 }
